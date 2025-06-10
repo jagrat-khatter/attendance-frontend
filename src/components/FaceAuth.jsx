@@ -2,7 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import * as cocoSsd from '@tensorflow-models/coco-ssd';
-import '@tensorflow/tfjs';
+import * as tf from '@tensorflow/tfjs'; 
+
 
 const FaceAuth = () => {
   const videoRef = useRef(null);
