@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ACC8E5;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 4 / 3;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #ACC8E5;
+  text-align: center;
+}
+
+.error {
+  color: rgb(255, 75, 20);
+  font-weight: bold;
+}
