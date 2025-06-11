@@ -107,7 +107,7 @@ const FaceAuth = () => {
 
   const markAttendance = async (name, distance) => {
     try {
-      const res = await axios.post('http://localhost:5004/mark-attendance', {
+      const res = await axios.post('https://attendance-node-backend-production.up.railway.app/mark-attendance', {
         name,
         distance,
       });
