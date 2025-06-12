@@ -107,10 +107,11 @@ const FaceAuth = () => {
 
   const markAttendance = async (name, distance) => {
     try {
-      const res = await axios.post('https://attendance-node-backend-production.up.railway.app/mark-attendance', {
+      const res = await axios.post('/api/mark', {
         name,
         distance,
       });
+
       console.log("📌 Attendance marked:", res.data.message);
     } catch (err) {
       console.error("❌ Error marking attendance:", err);
