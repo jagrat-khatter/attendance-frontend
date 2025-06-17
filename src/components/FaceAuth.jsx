@@ -135,8 +135,8 @@ const FaceAuth = () => {
       <div className="result">
         {authResult.person ? (
           <h3>
-            ✅ Recognized: {authResult.person} <br />
-            📏 Distance: {authResult.distance?.toFixed(4)}
+             Recognized: {authResult.person} <br />
+             Distance: {authResult.distance?.toFixed(4)}
           </h3>
         ) : (
           <h3>👤 No recognized face detected yet</h3>
